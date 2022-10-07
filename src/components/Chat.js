@@ -20,6 +20,8 @@ const Chat = ({ name }) => {
       content: value
     }
 
+    setValue('')
+
     socket.emit('new message from frontend', message)
   }
 
